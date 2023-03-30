@@ -1,0 +1,28 @@
+{
+  "name": "magic-be",
+  "version": "1.0.0",
+  "description": "Backend to Magic card collection dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeTanque/magic-be.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeTanque/magic-be/issues"
+  },
+  "homepage": "https://github.com/LeTanque/magic-be#readme",
+  "dependencies": {
+    "express": "4.17.3",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.3",
+    "typescript": "5.0.3"
+  }
+}
