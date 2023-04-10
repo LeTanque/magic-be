@@ -10,6 +10,12 @@ app.use("/", rootRoute);
 app.use("/search", cardSearch);
 app.use("/getCard", getRandomCard);
 
-app.listen(port, () => {
-  return console.log(`Magic is listening at http://${host}:${port}`);
-});
+if (process.env.NODE_ENV === "production") {
+  app.listen(() => {
+    return console.log(`Magic ${process.env.NODE_ENV}`);
+  });
+} else {
+  app.listen(port, () => {
+    return console.log(`Magic is listening at https://${host}:${port}`);
+  });
+}
