@@ -6,8 +6,7 @@
   "scripts": {
     "lint": "tsc && eslint . --ext .ts",
     "dev": "yarn lint && nodemon src/app.ts",
-    "start": "yarn lint && node .",
-    "heroku-postbuild": "yarn start"
+    "start": "yarn lint && node ."
   },
   "repository": "git+https://github.com/LeTanque/magic-be.git",
   "keywords": [],
