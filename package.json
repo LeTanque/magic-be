@@ -34,7 +34,8 @@
     "typescript": "5.0.3"
   },
   "engines": {
-    "node": "19.x"
+    "node": "19.x",
+    "yarn": "1.22.19"
   },
   "nodemonConfig": {
     "verbose": true,
