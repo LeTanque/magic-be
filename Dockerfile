@@ -7,7 +7,8 @@ RUN yarn install
 RUN yarn build
 # Set the working directory in the container
 WORKDIR /dist
-COPY . .
+COPY ["package.json", "yarn*", "./"]
+# COPY . .
 EXPOSE 8080
 # Define the entry point for the container
-CMD ["yarn", "start"]
+CMD ["node", "app.js"]
