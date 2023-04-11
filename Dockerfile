@@ -10,11 +10,11 @@ WORKDIR /app
 COPY ["package.json", "package-lock.json*", "./"]
 
 # Install the application dependencies
-RUN npm install --production
+RUN npm install --omit-dev
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 8080/tcp
 
 # Define the entry point for the container
-CMD [ "npm", "start" ]
+CMD [ "node", "dist/app.js", "0.0.0.0:8080" ]
