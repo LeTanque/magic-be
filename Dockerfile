@@ -6,9 +6,9 @@ ENV BACK_PORT=8080
 WORKDIR /dist
 # Install the application dependencies
 RUN yarn install
-RUN yarn build
 COPY ["package.json", "yarn*", "./"]
-# COPY . .
+RUN yarn build
+COPY . .
 EXPOSE 8080
 # Define the entry point for the container
 CMD ["node", "app.js"]
