@@ -2,7 +2,7 @@
   "name": "magic-be",
   "version": "1.0.0",
   "description": "Backend to Magic card collection dashboard",
-  "main": "/",
+  "main": "./dist/app.js",
   "scripts": {
     "lint": "tsc && eslint . --ext .ts",
     "dev": "yarn lint && nodemon src/app.ts",
