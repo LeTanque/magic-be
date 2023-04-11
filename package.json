@@ -2,12 +2,12 @@
   "name": "magic-be",
   "version": "1.0.0",
   "description": "Backend to Magic card collection dashboard",
-  "main": "./dist/app.js",
+  "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
     "lint": "eslint ./src --ext .ts",
     "dev": "yarn build && yarn lint && nodemon src/app.ts",
-    "start": "tsc && node dist/app.js"
+    "start": "tsc && node app.js"
   },
   "repository": "git+https://github.com/LeTanque/magic-be.git",
   "keywords": [],
