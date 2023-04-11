@@ -4,7 +4,7 @@
   "description": "Backend to Magic card collection dashboard",
   "main": "./dist/app.js",
   "scripts": {
-    "build": "tsc && eslint . --ext .ts",
+    "build": "tsc && eslint ./src --ext .ts",
     "dev": "yarn build && nodemon src/app.ts",
     "start": "tsc && node dist/app.js"
   },
