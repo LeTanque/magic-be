@@ -33,7 +33,7 @@
     "typescript": "5.0.3"
   },
   "engines": {
-    "node": "v19.x",
+    "node": "v19",
     "yarn": "1.22.19",
     "npm": "9.3.1"
   },
