@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc && eslint . --ext .ts",
     "dev": "yarn build && nodemon src/app.ts",
-    "start": "yarn build && node dist/app.js"
+    "start": "tsc && node dist/app.js"
   },
   "repository": "git+https://github.com/LeTanque/magic-be.git",
   "keywords": [],
